@@ -1,0 +1,102 @@
+1.  Day 1 - 29 Oct,2018
+
+    Linux distributions, 
+    installed virtual box on windows
+    Linux is made up of linux kernel and some additional software
+    Commercial or non-commercial
+    Designed for enterprise users, for home users
+    Supported on multiple types of hardware
+    Designed for servers, desktops etc
+       
+2.  Day 2 - 2 Nov,2018
+        SSH = default graphical GUI
+        SSH is easy to use eg= rename 100 files
+        basic commands(ls, man, cd,pwd, cat, echo)
+        man - use and short cuts
+        PATH- (contains list of a directories)
+        which - takes command names as arguments and tells
+        working with directories(. current, .. parent directorie, cd, / directory separetor)
+        $OLDPWD=old pwd
+        mkdir,rmdir,rm-rf
+        -F with ls to know the file types
+        ls options (-t time,-r reverse, -lart reverse,sort by time,long listing)
+        installed tree
+        hidden files    
+    
+3.  Day 3 - 7 Nov,2018
+        files and directory permissions(rwx) or can be represented by numbers
+        permission category(ugoa)
+        changing permission(chmod, ugoa, +-=, rwx)
+        cat,more,less,head,tell commands
+        nano,vi,vim(vimtutor),view,emacs editor
+        installed emacs
+        commands to find files and directories(find command(searches in real time),locate command)
+        installed locate
+        graphical editors(kedit,gedit,gvim,macs)
+        
+4.  Day 4 - 12 Nov,2018
+        delete(rm, rm -r dir,rm -f file)
+        copy(cp -i interactive mode 
+            cp -r recursively copies )
+        move
+        rename
+        compress(gzip = to compress file
+                 gunzip= to uncompress the file
+                 gzcat = to viw contents
+                 du=space utilized by file)
+        creating archive(tar)
+        wildcard characters([]  = character match
+                            [!] = no character match
+                            [a-r]* = range)
+                 use of     (*, ? with ls)
+        stdip,stdop,stderr
+        meaning of > = redirects std o/p to file(overwrite) , 
+                   >> = redirects std o/p to file(append) ,
+                   < = redirect i/p from file to command
+                   
+        contents in file comparision
+           diff
+           sdiff
+           vimdiff
+           
+        grep for searching patterns
+        options = i = ignore case 
+                  c = number of occurances
+                  n = line numbers
+                  v = no match
+                  
+        use of pipe = takes i/p from command and passes it as an o/p to first command
+        
+        to copy file from local machine to linux server we have to use SCP or SFTP
+                    not done sftp and scp transfer
+                    
+        alias =use to create shortcuts      
+                    
+        
+5.  Day 5 - 17 nov,2018
+        environment vaariables is storage location with name and value.
+        syntax to create env variable = export var="value"
+        kill process, wath running process
+            not getting the use of crontab
+            
+
+            
+            
+            Linux permission
+            
+            read permission :read a file. When set for a directory, this permission grants the ability to read the names of files in the directory, but not to find out any further                                                    information about them such as contents, file type, size, ownership, permissions.
+            
+            write permission: modify a file. When set for a directory, this permission grants the ability to modify entries in the directory. This includes creating files, deleting files, and renaming files.
+            
+            execute permission: execute a file. This permission must be set for executable programs, in order to allow the operating system to run them. When set for a directory, the execute permission is interpreted as the search permission: it grants the ability to access file contents and meta-information if its name is known, but not list files inside the directory, unless read is set also.
+            
+            crol
+
+            chmod:
+            -R Recursive, i.e. include objects in subdirectories
+            -f force processing to continue if errors occur
+            
+            u	user	file's owner
+            g	group	members of the file's group
+            o	others	users who are neither the file's owner nor members of the file's group
+            a	all	all three of the above, same as ugo
