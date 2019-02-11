@@ -1,0 +1,112 @@
+20/12/2018
+            completed section 1 and 2
+            learned the brief history of evoluation of new technology uptil now
+            installed docker again on debian
+            also installed visual studio code and spacevim
+            learned some new things about git
+            
+21/12/2018
+            section 3
+                some basic commands
+                difference between image(binary, library, code) and container (running instance of that image)
+                docker's default image 'registry' calledas docker hub
+            lecture 20:
+                80:80 port is already in use so tried to use different port, but its not working until previously created nginx image was not killed
+                    (use of netstat tool for searching which port is used by which service)
+                created nginx image, uses some commands and removed it
+            lecture 21:
+                working of container in background(looks for image,else download,create new container,gives new virtual IP inside docker engine)
+            lecture 26:
+                container commands = top, inspect, stats
+                
+22/12/2018
+            lecture 27:
+                learned -it for interactive shell
+                learned exec command which act like run on existing container
+                something about alpine linux
+            lecture 28:
+                battreries included but removable (default port is given but we can change it)
+                -p command
+                how network packets move around docker
+            lecture 30:
+                commands about network: ls,create,inspect,disconnect
+                types of networks(bridge,host,none)
+            lecture 31:
+                use of DNS for intercommunaction of container rathr than using IP
+                create own network rather than using default
+                
+23/12/2018
+            assignments
+            lecture 37:lookup of docker hub 
+                        about images(official images, what is tag, how to pull)
+            lecture 38:docker iamge history and docker image inspect command
+                        copy on write
+                        
+24/12/2018
+            lecture 39:how ta tag an image
+                    pull image in docker hub repo
+            lecture 40:
+                    intro about dockerfile
+            lecture 41:
+                    steps intro while building a dockerfile
+            assignment 44 not done
+            
+25/12/2018
+            section 5
+                solution of persistant container is volumes and data mounts.
+                volumes are like outside momory of container can attach to any container
+                we store important data in it, volumes should delete manually.
+                data is stored on unique location. we cant see that by going to that location , its created on VM.
+                the purpose of -v option in running container to give a name to a volume or to use same volume for further ,to identify it.
+                by using -v command after a runing container is some times necessary to configure a driver options. 
+                assignment on running container with named volume
+                assignment : use jekyll static site generator to start local web server
+
+26/12/2018
+            section 6
+                    docker compose is an combination of command line tool and a configuration file
+                    it configures relationship between containers as we need to run container with combinations like backend,frontend,sql etc
+                    saves docker container run setting in easy to read file
+                    YAML can be used with docker compose for local docker automation or production with swarm
+                    YAML syntax
+                    docker-compose commands
+                    assignment of writing yaml file and dockerfile for install and configure drupal
+                    
+27/12/2018
+            section 7
+                swarm is server clustering solution which brings multiple hosts together into single unit
+                created swarm clusters using play-with-docker.combination
+                
+28/12/2018
+            section 8
+                created 2 services on swarm and it distributed over node
+                something about overlay network
+                it does load balancing for us(uses virtual IP), and also in overlay network all swarm nodes listen to a external traffic, route the info to particular container, it helps during if any container fails dont need to configure everything again
+                how to replicate the service on all node(load balancing)
+                basics of how to create a multinode swarm and overlay network(assignment)
+                what is stack. 
+                secure solution for storing secreats
+                storing secreats to use by services,container and stack 
+29/12/2018
+            section 9
+                we can also use secret with compose file without swarm. just like using compose file used in swarm but its not that much secure.
+                we can write everything in one compose file, but it will become quite complicated
+                solution is we can use multiple .yml file
+                docker can read .yml and .override.yml bydefault
+                I have read docs.docker.com for this but didnot understood much
+                some update commands
+                healthcheck command
+                three states are there = starting, healthy, unhealthy
+                by using healthcheck docker can check the container is running or not.
+                it adds new field in docker container ls
+30/12/2018
+            section 10
+                docker hub for automatic biuld of an images
+                docker store 
+                docker cloude  =for swarm and cluster, use for building and testing images
+                docker registery=private image registery
+
+                
+                
+                c group,lxc
+                mysql,nginx store in volume
